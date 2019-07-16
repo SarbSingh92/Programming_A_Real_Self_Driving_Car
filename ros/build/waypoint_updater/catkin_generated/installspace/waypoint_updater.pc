@@ -1,8 +1,8 @@
-prefix=/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install
+prefix=/home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/install
 
 Name: waypoint_updater
 Description: Description of waypoint_updater
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install/lib 
+Libs: -L/home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/install/lib 
 Requires: 

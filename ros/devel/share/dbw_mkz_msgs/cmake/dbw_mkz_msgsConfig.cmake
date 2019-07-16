@@ -67,14 +67,14 @@ set(dbw_mkz_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(dbw_mkz_msgs_SOURCE_PREFIX /home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/src/dbw_mkz_msgs)
-  set(dbw_mkz_msgs_DEVEL_PREFIX /home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel)
+  set(dbw_mkz_msgs_SOURCE_PREFIX /home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/src/dbw_mkz_msgs)
+  set(dbw_mkz_msgs_DEVEL_PREFIX /home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/devel)
   set(dbw_mkz_msgs_INSTALL_PREFIX "")
   set(dbw_mkz_msgs_PREFIX ${dbw_mkz_msgs_DEVEL_PREFIX})
 else()
   set(dbw_mkz_msgs_SOURCE_PREFIX "")
   set(dbw_mkz_msgs_DEVEL_PREFIX "")
-  set(dbw_mkz_msgs_INSTALL_PREFIX /home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install)
+  set(dbw_mkz_msgs_INSTALL_PREFIX /home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/install)
   set(dbw_mkz_msgs_PREFIX ${dbw_mkz_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(dbw_mkz_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel/include " STREQUAL " ")
+if(NOT "/home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/devel/include " STREQUAL " ")
   set(dbw_mkz_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel/include")
+  set(_include_dirs "/home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/devel/include")
   if(NOT "https://bitbucket.org/dataspeedinc/dbw_mkz_ros/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://bitbucket.org/dataspeedinc/dbw_mkz_ros/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://dataspeedinc.com " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel/include " 
         message(FATAL_ERROR "Project 'dbw_mkz_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'dbw_mkz_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/src/dbw_mkz_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'dbw_mkz_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/src/dbw_mkz_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(dbw_mkz_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -131,7 +131,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/tborusiak/repos/udacity/final/Programming_A_Real_Self_Driving_Car/ros/devel/lib;/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
