@@ -1,0 +1,8 @@
+prefix=/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install
+
+Name: twist_controller
+Description: Description of twist_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install
+
+Name: styx_msgs
+Description: Description of styx_msgs
+Version: 0.0.0
+Cflags: -I/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install/include
+Libs: -L/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install/lib 
+Requires: 

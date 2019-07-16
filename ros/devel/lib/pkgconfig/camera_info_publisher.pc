@@ -1,0 +1,8 @@
+prefix=/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel
+
+Name: camera_info_publisher
+Description: Description of camera_info_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/devel/lib 
+Requires: 

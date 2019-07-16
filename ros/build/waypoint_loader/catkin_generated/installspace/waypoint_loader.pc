@@ -1,0 +1,8 @@
+prefix=/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install
+
+Name: waypoint_loader
+Description: Description of waypoint_loader
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/tborusiak/repos/udacity/Self_Driving_Capstone/ros/install/lib 
+Requires: 
